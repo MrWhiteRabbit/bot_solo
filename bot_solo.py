@@ -15,7 +15,7 @@ def get_text_messages(message):
     if message.text == '/help':
         bot.send_message(message.chat.id, '/age - покажу возраст в днях.')
     elif message.text == '/age':
-        startdate = '2021-08-04'.split('-')
+        startdate = '2021-08-03'.split('-')
         enddate = str(datetime.date.today()).split('-')  # '2021-11-14'.split('-')
         sd = datetime.date(int(startdate[0]), int(startdate[1]), int(startdate[2]))
         ed = datetime.date(int(enddate[0]), int(enddate[1]), int(enddate[2]))
